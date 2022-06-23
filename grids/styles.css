@@ -1,0 +1,43 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  display: flex;
+  place-items: center;
+  min-height: 100vh;
+}
+main {
+  display: grid;
+  grid-template-areas:
+    "a a a a b b"
+    "a a a a b b"
+    "c c c d d d"
+    "c c c e e e";
+  gap: 10px;
+  width: 30%;
+  margin: auto;
+}
+.a {
+  background-color: blue;
+  grid-area: a;
+  height: 50px;
+}
+.b {
+  background-color: green;
+  grid-area: b;
+}
+.c {
+  background-color: black;
+  grid-area: c;
+}
+.d {
+  background-color: violet;
+  grid-area: d;
+  height: 50px;
+}
+.e {
+  background-color: red;
+  grid-area: e;
+  height: 50px;
+}
