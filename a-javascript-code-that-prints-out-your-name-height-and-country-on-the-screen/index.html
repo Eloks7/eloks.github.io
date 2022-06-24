@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Displaying using JavaScript</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h2 id="heading"></h2>
+  <p id="name"></p>
+  <p id="height"></p>
+  <p id="country"></p>
+  
+  <script>
+      let name = prompt('Please enter your name', 'Enter your name here');
+      let height = prompt('Please enter your height', 'Enter your height here');
+      let country = prompt('Please enter your name', 'Enter your country here');
+      let personalDetail = `${name}, ${height}, ${country}`
+
+      if (personalDetail != null){
+        document.getElementById("heading").innerHTML = `This is ${name}'s personal data`;
+        document.getElementById("name").innerHTML = `My name is ${name}`;
+        document.getElementById("height").innerHTML = `I am ${height} tall`;
+        document.getElementById("country").innerHTML = `From ${country}`;
+        
+      }
+
+    
+  </script>
+
+ <!--
+This script places a badge on your repl's full-browser view back to your repl's cover page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green, teal, blue, blurple, magenta, pink!
+-->
+<script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> 
+</body>
+
+</html>
